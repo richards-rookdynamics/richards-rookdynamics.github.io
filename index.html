@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steven L. Richards — Resume</title>
+  <title>Steven L. Richards , Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -63,7 +63,7 @@
     .hero-contact a:hover { color: var(--carolina); }
     .hero-contact a::before { content: '↗'; font-size: 0.7rem; color: var(--carolina); }
     .hero-divider {
-      width: 60px; height: 3px; background: var(--carolina); margin-top: 3rem;
+      width: 60px; height: 3px; background: var(--carolina); margin-top: 1.5rem;
       opacity: 0; animation: fadeUp 0.7s ease forwards 0.6s;
     }
 
@@ -72,7 +72,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
       opacity: 0;
       animation: fadeUp 0.7s ease forwards 0.7s;
     }
@@ -198,7 +198,7 @@
       font-size: 0.9rem; line-height: 1.65; color: #8aaabb; font-weight: 300;
       padding: 0.3rem 0 0.3rem 1.25rem; position: relative;
     }
-    .bullet-list li::before { content: '—'; position: absolute; left: 0; color: var(--carolina); font-size: 0.75rem; }
+    .bullet-list li::before { content: ','; position: absolute; left: 0; color: var(--carolina); font-size: 0.75rem; }
 
     /* ANIMATIONS */
     @keyframes fadeUp {
@@ -221,21 +221,22 @@
 </head>
 <body>
 
-  <!-- Welcome to my resume page. There is no phone number listed — please email me and we can exchange contact info. -->
+  <!-- Welcome to my resume page. There is no phone number listed , please email me and we can exchange contact info. -->
   <nav class="nav-dots" aria-label="Page navigation">
     <button class="nav-dot active" data-target="hero" title="Top"></button>
     <button class="nav-dot" data-target="summary" title="Summary"></button>
     <button class="nav-dot" data-target="projects" title="AI Systems Work"></button>
     <button class="nav-dot" data-target="experience" title="Experience"></button>
+    <button class="nav-dot" data-target="career-history" title="Career History"></button>
     <button class="nav-dot" data-target="skills" title="Skills"></button>
     <button class="nav-dot" data-target="military" title="Military"></button>
   </nav>
 
   <section class="hero" id="hero">
     <div class="hero-inner">
-      <p class="hero-eyebrow">Resume · Cybersecurity &amp; AI Systems</p>
+      <p class="hero-eyebrow">Resume · Cybersecurity &amp; Presales Engineering</p>
       <h1 class="hero-name">Steven<span>Richards</span></h1>
-      <p class="hero-title">Cybersecurity and AI operations leader — 20+ years spanning enterprise security architecture, agentic AI systems, and full-stack systems engineering.</p>
+      <p class="hero-title">Cybersecurity and presales engineering leader with 20+ years spanning enterprise security architecture, complex solution design, and applied AI systems work.</p>
       <div class="hero-contact">
         <a href="mailto:resume@rookdynamics.com">resume@rookdynamics.com</a>
 <a href="https://www.linkedin.com/in/stevenlrichards" target="_blank" rel="noopener">LinkedIn</a>
@@ -246,6 +247,7 @@
         <a href="#summary">Summary</a>
         <a href="#projects">AI Systems Work</a>
         <a href="#experience">Experience</a>
+        <a href="#career-history">Career History</a>
         <a href="#skills">Skills</a>
         <a href="#military">Military</a>
       </nav>
@@ -261,7 +263,7 @@
       <p class="section-label">Overview</p>
       <h2 class="section-title">Professional Summary</h2>
       <p class="summary-text">
-        Currently building <strong>AI-operated software infrastructure</strong> at an early-stage AI startup — designing and deploying multi-agent autonomous systems, LLM-integrated platforms, and agentic workflows with tool-calling orchestration. Brings deep presales engineering expertise — Palo Alto Networks, Cylance, Optiv — alongside direct experience building agentic AI systems with <strong>LLM routing, context and memory management, RAG pipelines, prompt engineering, and AI infrastructure</strong>. Known for translating complex security and AI challenges into production-grade, scalable solutions.
+        Cybersecurity and presales engineering leader with over 20 years of experience across enterprise security architecture, complex solution selling, and applied AI systems work. Currently serving as Domain Consultant at <strong>Palo Alto Networks</strong>, focused on Cortex XDR and XSOAR across a broad range of enterprise verticals. Career spans presales and solution engineering roles at Cylance, Optiv, IBM, Juniper Networks, and Internet Security Systems, building on a foundation in network and security infrastructure dating to the late 1990s. Outside of the day job, actively building agentic AI systems, autonomous infrastructure, and AI-integrated tooling, developing practical expertise in <strong>LLM routing, context and memory management, RAG pipelines, and multi-agent coordination</strong>.
       </p>
     </div>
   </section>
@@ -270,7 +272,7 @@
     <div class="section-inner">
       <p class="section-label reveal">Applied Work</p>
       <h2 class="section-title reveal">AI Systems Projects</h2>
-      <p class="reveal" style="font-size:0.95rem;font-weight:300;color:#8aaabb;max-width:700px;margin-bottom:2rem;line-height:1.7;">Independent work spanning agentic AI systems, autonomous infrastructure, and applied security tooling — built and operated under Rook Dynamics since 2024.</p>
+      <p class="reveal" style="font-size:0.95rem;font-weight:300;color:#8aaabb;max-width:700px;margin-bottom:2rem;line-height:1.7;">Independent work spanning agentic AI systems, autonomous infrastructure, and applied security tooling. Built and operated under Rook Dynamics since 2024.</p>
       <div class="projects-grid reveal">
         <div class="project-card">
           <div class="project-card-title">AI Operations Platform (Rust)</div>
@@ -278,7 +280,7 @@
         </div>
         <div class="project-card">
           <div class="project-card-title">Multi-Agent AI Infrastructure</div>
-          <p>Five-agent system using Anthropic-native MCP tooling with dynamic tool discovery — deploy-ops, lab-infra, rust-reviewer, frontend-builder, security-auditor.</p>
+          <p>Five-agent system using Anthropic-native MCP tooling with dynamic tool discovery: deploy-ops, lab-infra, rust-reviewer, frontend-builder, security-auditor.</p>
         </div>
         <div class="project-card">
           <div class="project-card-title">AI Security &amp; Applied ML</div>
@@ -308,12 +310,12 @@
       <div class="job reveal">
         <div class="job-header">
           <div>
-            <div class="job-company">Palo Alto Networks — Cincinnati, OH</div>
+            <div class="job-company">Palo Alto Networks, Cincinnati, OH</div>
             <div class="job-title">Domain Consultant - Cortex (Pre-sales)</div>
           </div>
           <div class="job-period">2019 – Present</div>
         </div>
-        <div class="job-performance">FY23: 145% · FY22: 187% · FY21: 117% · FY20: 212% · FY19: 123% — Century Club 2019-2023*</div>
+        <div class="job-performance">FY23: 145% · FY22: 187% · FY21: 117% · FY20: 212% · FY19: 123% | Century Club 2019-2023*</div>
         <ul class="bullet-list">
           <li>Lead design and technical sale of advanced security solutions across Financial Services, Healthcare, Government, Education, Manufacturing, and Critical Infrastructure.</li>
           <li>Develop custom Insider Risk Management solution with Cortex XSOAR, replacing a failed Exabeam implementation for the region's largest financial customer.</li>
@@ -324,14 +326,14 @@
       <div class="job reveal">
         <div class="job-header">
           <div>
-            <div class="job-company">Cylance Inc. — Cincinnati, OH</div>
+            <div class="job-company">Cylance Inc., Cincinnati, OH</div>
             <div class="job-title">Security Engineer (Pre-sales)</div>
           </div>
           <div class="job-period">2015 – 2019</div>
         </div>
         <div class="job-performance">FY18: 127% · FY17: 223% · FY16: 167%</div>
         <ul class="bullet-list">
-          <li>Early adopter of AI/ML-driven endpoint security — technical lead for product evaluations using machine learning models for predictive threat prevention.</li>
+          <li>Early adopter of AI/ML-driven endpoint security , technical lead for product evaluations using machine learning models for predictive threat prevention.</li>
           <li>Developed dynamic live-malware demonstration methods; delivered technical expertise enabling expansion across 5 states.</li>
         </ul>
       </div>
@@ -339,17 +341,149 @@
       <div class="job reveal">
         <div class="job-header">
           <div>
-            <div class="job-company">Optiv (formerly Accuvant) — Cincinnati, OH</div>
+            <div class="job-company">Optiv (formerly Accuvant), Cincinnati, OH</div>
             <div class="job-title">Senior Solutions Engineer (Pre-sales)</div>
           </div>
           <div class="job-period">2009 – 2015</div>
         </div>
-        <div class="job-performance">FY14: President's Club · FY13: #1 Account Team + President's Club · FY12: President's Club</div>
+        <div class="job-performance">FY14: President's Club · FY13: #1 Account Team, President's Club · FY12: President's Club</div>
         <ul class="bullet-list">
           <li>Delivered enterprise pre-sales engineering across a full cybersecurity product portfolio.</li>
           <li>Led RFP responses, executive-level presentations, and technical architecture sessions.</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="career-history" style="background: var(--navy);">
+    <div class="section-inner">
+      <p class="section-label reveal">Background</p>
+      <h2 class="section-title reveal">Full Career History</h2>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">Palo Alto Networks, Cincinnati, OH</div>
+            <div class="job-title">Domain Consultant, Cortex (Pre-sales)</div>
+          </div>
+          <div class="job-period">2019 – Present</div>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">Cylance Inc., Cincinnati, OH</div>
+            <div class="job-title">Security Engineer (Pre-sales)</div>
+          </div>
+          <div class="job-period">2015 – 2019</div>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">Optiv (formerly Accuvant), Cincinnati, OH</div>
+            <div class="job-title">Senior Solutions Engineer (Pre-sales)</div>
+          </div>
+          <div class="job-period">2009 – 2015</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Delivered enterprise pre-sales engineering across a broad security portfolio, supporting multimillion-dollar sales cycles through RFP responses, architecture sessions, and executive presentations. Consistent President's Club performer.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">IBM (Internet Security Systems), Cincinnati, OH</div>
+            <div class="job-title">Security Solutions Architect</div>
+          </div>
+          <div class="job-period">2007 – 2008</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Served as Solutions Architect for ISS following IBM acquisition, positioning the full ISS security portfolio across enterprise accounts in the Midwest region.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">Consentry Networks, San Jose, CA</div>
+            <div class="job-title">Consulting Systems Engineer</div>
+          </div>
+          <div class="job-period">2005 – 2007</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Consulting systems engineer for an early network access control startup. Worked directly with customers on NAC architecture, policy design, and deployment across complex enterprise environments.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">Juniper Networks (NetScreen, OneSecure), New York, NY / Chicago, IL</div>
+            <div class="job-title">Consulting Systems Engineer</div>
+          </div>
+          <div class="job-period">2002 – 2005</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Consulting systems engineer through the NetScreen acquisition by Juniper and the OneSecure integration. Supported enterprise firewall, VPN, and IDP deployments across financial services, healthcare, and government accounts in the Northeast and Midwest.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">SecureInfo Corporation, San Antonio, TX</div>
+            <div class="job-title">Security Engineering Consultant</div>
+          </div>
+          <div class="job-period">2001 – 2002</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Security engineering consultant supporting federal government clients with compliance, risk assessment, and security architecture work.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">Internet Security Systems, Chicago, IL</div>
+            <div class="job-title">Systems Engineer</div>
+          </div>
+          <div class="job-period">2001</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Systems engineer supporting ISS intrusion detection and vulnerability management products across enterprise accounts in the Chicago region.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">CNG Financial, Cincinnati, OH</div>
+            <div class="job-title">Security Engineer</div>
+          </div>
+          <div class="job-period">1999 – 2001</div>
+        </div>
+        <ul class="bullet-list">
+          <li>In-house security engineer for a financial services company. Responsible for firewall management, intrusion detection, security policy, and incident response across a multi-site environment.</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-header">
+          <div>
+            <div class="job-company">DLP Technologies, Cincinnati, OH</div>
+            <div class="job-title">Network Administrator</div>
+          </div>
+          <div class="job-period">1997 – 1999</div>
+        </div>
+        <ul class="bullet-list">
+          <li>Network administrator responsible for infrastructure design, maintenance, and support. Served as an early entry point into enterprise networking and security operations.</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
@@ -428,7 +562,7 @@
       <p class="section-label">Service</p>
       <h2 class="section-title">Military Experience</h2>
       <div class="military-block">
-        <div class="job-company">United States Air Force Reserve — 906th Tactical Fighter Group</div>
+        <div class="job-company">United States Air Force Reserve, 906th Tactical Fighter Group</div>
         <div class="job-title" style="margin:0.25rem 0;">F-16 Weapons Systems Specialist (462x0)</div>
         <div class="job-period" style="margin-bottom:0.75rem;">1989 – 1995</div>
         <ul class="bullet-list">
@@ -445,7 +579,7 @@
       <blockquote>
         I've served as CISO of several large organizations. Wherever I go, I view Steve Richards as a trusted advisor and consider him a part of our team. His view of what is happening in the industry is both deep and broad and his focus on problem-solving is truly unique.
       </blockquote>
-      <div class="quote-attr">— Marc Yoder · Former CISO, Texas.gov &amp; Texas Dept. of Transportation</div>
+      <div class="quote-attr">Marc Yoder · Former CISO, Texas.gov &amp; Texas Dept. of Transportation</div>
     </div>
   </section>
 
@@ -460,7 +594,7 @@
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
 
-    const sections = ['hero','summary','projects','experience','skills','military'];
+    const sections = ['hero','summary','projects','experience','career-history','skills','military'];
     const dots = document.querySelectorAll('.nav-dot');
     dots.forEach(dot => {
       dot.addEventListener('click', () => {
