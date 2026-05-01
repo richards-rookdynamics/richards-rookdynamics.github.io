@@ -123,8 +123,8 @@
     .summary-text strong { color: var(--carolina-light); font-weight: 500; }
 
     /* EXPERIENCE */
-    #ai-experience { background: var(--navy); }
-    #enterprise { background: var(--navy-mid); }
+    #projects { background: var(--navy); }
+    #experience { background: var(--navy-mid); }
 
     .job {
       border-left: 2px solid rgba(75,156,211,0.2); padding-left: 2rem;
@@ -225,8 +225,8 @@
   <nav class="nav-dots" aria-label="Page navigation">
     <button class="nav-dot active" data-target="hero" title="Top"></button>
     <button class="nav-dot" data-target="summary" title="Summary"></button>
-    <button class="nav-dot" data-target="ai-experience" title="AI Experience"></button>
-    <button class="nav-dot" data-target="enterprise" title="Enterprise"></button>
+    <button class="nav-dot" data-target="projects" title="AI Systems Work"></button>
+    <button class="nav-dot" data-target="experience" title="Experience"></button>
     <button class="nav-dot" data-target="skills" title="Skills"></button>
     <button class="nav-dot" data-target="military" title="Military"></button>
   </nav>
@@ -244,8 +244,8 @@
       <div class="hero-divider"></div>
       <nav class="hero-nav">
         <a href="#summary">Summary</a>
-        <a href="#ai-experience">AI Experience</a>
-        <a href="#enterprise">Enterprise</a>
+        <a href="#projects">AI Systems Work</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#military">Military</a>
       </nav>
@@ -266,65 +266,41 @@
     </div>
   </section>
 
-  <section id="ai-experience">
+  <section id="projects">
     <div class="section-inner">
-      <p class="section-label reveal">Experience</p>
-      <h2 class="section-title reveal">AI &amp; Autonomous Systems</h2>
-
-      <div class="job reveal">
-        <div class="job-header">
-          <div>
-            <div class="job-company">Rook Dynamics</div>
-            <div class="job-title">Founder &amp; Principal Engineer</div>
-          </div>
-          <div class="job-period">2024 – Present</div>
+      <p class="section-label reveal">Applied Work</p>
+      <h2 class="section-title reveal">AI Systems Projects</h2>
+      <p class="reveal" style="font-size:0.95rem;font-weight:300;color:#8aaabb;max-width:700px;margin-bottom:2rem;line-height:1.7;">Independent work spanning agentic AI systems, autonomous infrastructure, and applied security tooling — built and operated under Rook Dynamics since 2024.</p>
+      <div class="projects-grid reveal">
+        <div class="project-card">
+          <div class="project-card-title">AI Operations Platform (Rust)</div>
+          <p>Multi-tenant agentic orchestration platform with secrets management, CI/CD pipelines, and HashiCorp Vault integration across 21+ engineering phases.</p>
         </div>
-        <div class="projects-grid" style="margin-top:1.25rem;">
-          <div class="project-card">
-            <div class="project-card-title">AI Operations Platform (Rust)</div>
-            <p>Multi-tenant agentic orchestration platform with secrets management, CI/CD pipelines, and HashiCorp Vault integration across 21+ engineering phases.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-card-title">Multi-Agent AI Infrastructure</div>
-            <p>Five-agent system (deploy-ops, lab-infra, rust-reviewer, frontend-builder, security-auditor) using Anthropic-native MCP tooling with dynamic tool discovery.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-card-title">AI Security &amp; Applied ML</div>
-            <p>Isolated AI red team training enclave with vector DB integration, OWASP targets, and adversarial testing tooling for AI-augmented penetration testing.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-card-title">Persistent Agent Daemon (Rust)</div>
-            <p>Multi-agent coordination daemon with PostgreSQL/pgvector for RAG capabilities and a Python/SQLite context management system for long-running agent state.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-card-title">Browser Extension (TypeScript/WXT)</div>
-            <p>Automated text routing, IOC lookup, and indicator defanging with LLM integration for intelligent content classification.</p>
-          </div>
-          <div class="project-card">
-            <div class="project-card-title">Infrastructure &amp; DevOps</div>
-            <p>Full ESXi → Proxmox migration. Multi-node private lab with dedicated VMs orchestrated via MCP-based remote execution.</p>
-          </div>
+        <div class="project-card">
+          <div class="project-card-title">Multi-Agent AI Infrastructure</div>
+          <p>Five-agent system using Anthropic-native MCP tooling with dynamic tool discovery — deploy-ops, lab-infra, rust-reviewer, frontend-builder, security-auditor.</p>
         </div>
-      </div>
-
-      <div class="job reveal">
-        <div class="job-header">
-          <div>
-            <div class="job-company">Task Force 70</div>
-            <div class="job-title">Technology Strategist</div>
-          </div>
-          <div class="job-period">Ongoing · Nonprofit</div>
+        <div class="project-card">
+          <div class="project-card-title">AI Security &amp; Applied ML</div>
+          <p>Isolated AI red team training enclave with vector DB integration, OWASP targets, and adversarial testing tooling for AI-augmented penetration testing.</p>
         </div>
-        <ul class="bullet-list">
-          <li>Architected full platform rebuild — Next.js 14, Vercel, Railway, Stripe, Clerk — with 16 locked Architecture Decision Records.</li>
-          <li>Maintained and enhanced production Rails application for course registration with automated workflows and staging deployment.</li>
-          <li>Deployed and managed custom Moodle LMS for law enforcement officer training delivery.</li>
-        </ul>
+        <div class="project-card">
+          <div class="project-card-title">Persistent Agent Daemon (Rust)</div>
+          <p>Multi-agent coordination daemon with PostgreSQL/pgvector for RAG capabilities and a Python/SQLite context management system for long-running agent state.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-card-title">Browser Extension (TypeScript/WXT)</div>
+          <p>Automated text routing, IOC lookup, and indicator defanging with LLM integration for intelligent content classification.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-card-title">Infrastructure &amp; DevOps</div>
+          <p>Full ESXi to Proxmox migration. Multi-node private lab with dedicated VMs orchestrated via MCP-based remote execution.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="enterprise">
+  <section id="experience">
     <div class="section-inner">
       <p class="section-label reveal">Experience</p>
       <h2 class="section-title reveal">Enterprise Cybersecurity</h2>
@@ -484,7 +460,7 @@
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
 
-    const sections = ['hero','summary','ai-experience','enterprise','skills','military'];
+    const sections = ['hero','summary','projects','experience','skills','military'];
     const dots = document.querySelectorAll('.nav-dot');
     dots.forEach(dot => {
       dot.addEventListener('click', () => {
